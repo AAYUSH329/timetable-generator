@@ -43,7 +43,7 @@ function generateTimetable() {
       for (let p = 0; p < periodsPerDay; p++) {
         const subject = subjectsShuffled[p % subjectsShuffled.length];
         const teacher = teacherMap[subject][cls];
-        dayPlan.push(\`\${subject} (\${teacher})\`);
+        dayPlan.push(`${subject} (${teacher})`);
       }
       table[cls].push(dayPlan);
     }
